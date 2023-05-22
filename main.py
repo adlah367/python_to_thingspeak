@@ -3,7 +3,7 @@ import requests
 import time
 
 # Open the serial port
-ser = serial.Serial('COM4', 115200)  # Replace 'COM1' with your serial port name
+ser = serial.Serial('COM4', 115200)  # Replace 'COM4' with your serial port name and your preferred serial baud rate
 
 while True:
     # Read data from the serial port
@@ -11,7 +11,7 @@ while True:
 
     # Create a dictionary of the data for ThingSpeak
     ts_data = {
-        'api_key': 'KXXCRVWL7FEAORDI',  # Replace with your ThingSpeak API key
+        'api_key': 'put your write api key here',  # Replace with your ThingSpeak API key
         'field1': data,
         # Add more fields as needed
     }
